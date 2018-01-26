@@ -1,5 +1,5 @@
-import superagent from 'superagent'
-import cheerio from 'cheerio'
+import superagent from "superagent"
+import cheerio from "cheerio"
 export default class Api
 {
     /**
@@ -22,10 +22,10 @@ export default class Api
         return result.total>0?{
             "code":200,
             "message":"查询成功",
-            "data":result
+            "data":result,
         }:{
             "code":400,
-            "message":"查询失败，请检查你的信息是否无误"
+            "message":"查询失败，请检查你的信息是否无误",
         }
     }
     /**
@@ -45,7 +45,7 @@ export default class Api
                 })
                 .query({
                     id:number,
-                    name:user
+                    name:user,
                 })
                 .end(function(err,sres)
                 {
@@ -88,7 +88,7 @@ export default class Api
             total,
             listen,
             read,
-            writing
+            writing,
         }
     }
 }
