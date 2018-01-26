@@ -1,56 +1,68 @@
-body{
-	font-family: 'Microsoft Yahei';
+body
+{
+	font-family:'Microsoft Yahei';
 }
-.jumbotron{
+.jumbotron
+{
 	color:white;
-	background-image: url('../img/top.jpg');
+	background-image:url('../img/top.jpg');
 }
-.wrapper{
+.wrapper
+{
 	margin:30px 50px;
 }
-.bs-callout {
-	padding: 10px;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
-    position: relative;
-    right:12px;
+.bs-callout
+{
+	padding:10px;
+	border:1px solid #eee;
+	border-left-width:5px;
+	border-radius:3px;
+	position:relative;
+	right:12px;
 }
-.bs-callout-info {
-    border-left-color: #1b809e;
+.bs-callout-info
+{
+	border-left-color:#1b809e;
 }
-.bs-callout-info h4{
-    color: #1b809e;
+.bs-callout-info h4
+{
+	color:#1b809e;
 }
-.bs-callout-warning {
-    border-left-color: #aa6708;
+.bs-callout-warning
+{
+	border-left-color:#aa6708;
 }
-.bs-callout-warning h4{
-    color: #aa6708;
+.bs-callout-warning h4
+{
+	color:#aa6708;
 }
-.bs-callout-alert {
-    border-left-color: #5cb85c;
+.bs-callout-alert
+{
+	border-left-color:#5cb85c;
 }
-.bs-callout-alert h4{
-    color: #5cb85c;
+.bs-callout-alert h4
+{
+	color:#5cb85c;
 }
-
-form{
+form
+{
 	margin-top:20px;
 }
-.footer{
-	margin-top: 50px;
-	width: 100%;
-	text-align: center;
-	background: #333;
-	height: 50px;
-	line-height: 50px;
-	font-size: 16px;
-	color: white;
+.footer
+{
+	margin-top:50px;
+	width:100%;
+	text-align:center;
+	background:#333;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	color:white;
 }
-.api{
+.api
+{
 	margin-top:13px;
 	font-size:14px;
 	padding:10px;
-	line-height: 26px;
+	line-height:26px;
 }
