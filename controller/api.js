@@ -14,7 +14,7 @@ export default class Api
         const data=await this.getData(user,number).catch((err)=>
         {
             console.log(err)
-        })
+        });
         // 解析网页内容
         const result=this.parseData(data)
         console.log(result)
