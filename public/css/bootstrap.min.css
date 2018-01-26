@@ -2940,10 +2940,6 @@ button.close
 {display:none !important;}
 .affix
 {position:fixed;}
-@-ms-viewport
-{
-	width:device-width;
-}
 .visible-lg, .visible-md, .visible-sm, .visible-xs
 {display:none !important;}
 .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-xs-block, .visible-xs-inline, .visible-xs-inline-block
