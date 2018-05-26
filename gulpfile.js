@@ -1,24 +1,24 @@
 //引入模块
-var gulp = require('gulp'); 
+const gulp = require('gulp'); 
 //合并
-var concat = require('gulp-concat');
+const concat = require('gulp-concat');
 //移除debug
-var stripDebug = require('gulp-strip-debug');
+const stripDebug = require('gulp-strip-debug');
 //压缩
-var uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 //js代码检查
-var jshint = require('gulp-jshint');
+const jshint = require('gulp-jshint');
 //css浏览器自动添加前缀
-var autoprefix = require('gulp-autoprefixer');
+const autoprefix = require('gulp-autoprefixer');
 //css压缩
-var minifyCSS = require('gulp-minify-css');
+const minifyCSS = require('gulp-minify-css');
 //图片压缩
-var imageMin = require('gulp-imagemin');
+const imageMin = require('gulp-imagemin');
 
 //创建js的任务-名称是scripts
 gulp.task('scripts', function() {
   gulp.src(['./public/js/jquery.min.js','./public/js/bootstrap.min.js',
-    './public/js/angular.js','./public/js/index.js'])
+    './public/js/angular.js','./public/js/index.js',])
     .pipe(jshint())
     .pipe(concat('scripts.min.js'))
     .pipe(stripDebug())
@@ -29,7 +29,7 @@ gulp.task('scripts', function() {
 
 // CSS concat, auto-prefix and minify
 gulp.task('styles', function() {
-  gulp.src(['./public/css/*.css'])
+  gulp.src(['./public/css/*.css',])
     .pipe(concat('styles.min.css'))
     .pipe(autoprefix('last 2 versions'))
     .pipe(minifyCSS())
@@ -44,7 +44,7 @@ gulp.task('image',function(){
 })
 
 // default gulp task
-gulp.task('default', [ 'styles','scripts','image'], function() {   
+gulp.task('default', [ 'styles','scripts','image',], function() {
 
 	// watch for JS changes
 	gulp.watch('./public/js/*.js', function() {

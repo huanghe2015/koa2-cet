@@ -71,14 +71,14 @@ export default class Api
         {
             let text=$(ele).find('td').text().trim()
             let lastText=$(ele).children().last().text().trim()
-            name=index==0?text:name // 姓名
-            school=index==1?text:school // 学校
-            type=index==2?text:type //考试类别
-            number=index==4?text:number //准考证号
-            total=index==5?($(ele).find('span.colorRed').text().trim()-0):total
-            listen=index==6?lastText:listen //听力
-            read=index==7?lastText:read //阅读
-            writing=index==8?lastText:writing //写作和翻译
+            name=index===0?text:name // 姓名
+            school=index===1?text:school // 学校
+            type=index===2?text:type //考试类别
+            number=index===4?text:number //准考证号
+            total=index===5?($(ele).find('span.colorRed').text().trim()-0):total
+            listen=index===6?lastText:listen //听力
+            read=index===7?lastText:read //阅读
+            writing=index===8?lastText:writing //写作和翻译
         })
         return {
             name,

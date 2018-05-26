@@ -1,4 +1,13 @@
 {
+    "name": "koa2-cet",
+    "version": "0.1.1",
+    "private": true,
+    "scripts": {
+        "start": "node bin/www",
+        "dev": "./node_modules/.bin/nodemon bin/www",
+        "pm2": "pm2 start bin/www"
+    },
+    "main": "gulpfile.js",
     "dependencies": {
         "cheerio": "latest",
         "debug": "latest",
@@ -14,26 +23,18 @@
         "superagent": "latest"
     },
     "devDependencies": {
+        "babel-core": "latest",
         "babel-polyfill": "latest",
-        "babel-preset-env": "latest",
+        "babel-preset-es2015": "latest",
         "babel-preset-stage-0": "latest",
-        "gulp4": "latest",
+        "gulp": "latest",
         "gulp-autoprefixer": "latest",
         "gulp-concat": "latest",
         "gulp-imagemin": "latest",
         "gulp-jshint": "latest",
-        "gulp-clean-css": "latest",
+        "gulp-minify-css": "latest",
         "gulp-strip-debug": "latest",
         "gulp-uglify": "latest",
         "jshint": "latest"
-    },
-    "main": "gulpfile.js",
-    "name": "koa2-cet",
-    "private": true,
-    "scripts": {
-        "dev": "./node_modules/.bin/nodemon bin/www",
-        "pm2": "pm2 start bin/www",
-        "start": "node bin/www"
-    },
-    "version": "0.1.2"
+    }
 }
